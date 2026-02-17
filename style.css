@@ -1,0 +1,25 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 600px;
+    height: 600px; 
+    border: 1px solid #333;
+    margin: auto;
+    padding:50px;
+    border:solid 5px rgb(22, 96, 9);
+    border-radius: 20px;
+}
+.even {
+    background-color: black;
+}
+.odd{
+    background-color: white;
+    
+}
+#title{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+}   
