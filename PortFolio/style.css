@@ -1,0 +1,47 @@
+body{
+    font-family:verdana;
+    color:white;
+    margin:0;
+    padding:15px;
+    background-color:hsl(240, 73%, 12%)
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+nav{
+    display:flex;
+    align-items:center;
+    height:100px;
+    background-color:hsl(240, 74%, 21%);
+    color:white;
+    position:relative;
+    margin-bottom:20px;
+}
+#navitem{
+    position:absolute;
+    word-spacing:30px;
+    right:45px;
+    font-size:30px;
+}
+h1{
+    position:absolute;
+    left:30px;
+    font-size:45px;
+}
+.container{
+    font-size:25px;
+}
+#about,#projects{
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin:auto;
+}
+ul{
+    list-style-type: square;
+}
+.inner{
+    list-style-type: circle;
+}
