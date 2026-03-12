@@ -1,62 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav>
-            <h1>Gowtham Raj</h1>
-            <div id="navitem">
-                <a href="#about">ABOUT</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#projects">CONTACTS</a>
-            </div>
-        </nav>
-        <div class="container">
-            <div id="about">
-                
-                <img src="images.png" alt="picture of gowtham raj" height="400">
-                <div class="text">
-                    <h2>About<hr></h2>
-                    I am Gowtham, a technology enthusiast focused on AI, machine learning, and algorithmic problem solving. I enjoy building systems that turn data into meaningful insights and practical solutions. Here are some of the key tools, technologies, and skills I work with:
+        <div class="page-shell">
+            <nav aria-label="Primary">
+                <div class="nav-items">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </nav>
+
+            <main class="container">
+                <header class="name">
+                    <h1>Gowtham Raj</h1>
+                    <p>AI and ML Enthusiast | Problem Solver | Developer</p>
+                </header>
+
+                <section id="about" class="card about">
+                    <h2 class="title">About</h2>
+                    <p class="text">
+                        I am Gowtham, a technology enthusiast focused on AI,
+                        machine learning, and algorithmic problem solving. I
+                        enjoy building systems that turn data into meaningful
+                        insights and practical solutions.
+                    </p>
+
+                    <div class="skills-grid">
+                        <article class="skill-card">
+                            <div class="skill-top">
+                                <h3>Machine Learning</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Data Preprocessing</span>
+                                <span class="skill-tag">Model Evaluation</span>
+                            </div>
+                        </article>
+
+                        <article class="skill-card">
+                            <div class="skill-top">
+                                <h3>Web Development</h3>
+                                <span class="skill-level">Strong</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </article>
+
+                        <article class="skill-card">
+                            <div class="skill-top">
+                                <h3>Programming Languages</h3>
+                                <span class="skill-level">Proficient</span>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="projects" class="card projects">
+                    <h2 class="title">Projects</h2>
                     <ul>
-                        <li>Machine Learning
+                        <li>
+                            <strong>Patient Triage System</strong>
                             <ul class="inner">
-                                <li>Data Preprocessing</li>
-                                <li>Model Evaluation</li>
+                                <li>
+                                    Built an intelligent healthcare triage
+                                    system that analyzes patient data such as
+                                    vital signs, symptoms, and medical history
+                                    to predict risk levels.
+                                </li>
+                                <li>
+                                    Helped hospitals prioritize patients with
+                                    faster data-driven decisions.
+                                </li>
+                                <li>
+                                    Technologies: Python, Machine Learning,
+                                    Data Processing, Web Interface
+                                </li>
                             </ul>
-                        </li>
-                        <li>Web Development</li>
-                            <ul class="inner">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                        <li>Programming Languages
-                            <ul class="inner">
-                                <li>C++</li>
-                                <li>Python</li>
-                                <li>Java</li>
-                            </ul>                            
                         </li>
                     </ul>
-                </div>
-            </div>
-            <div id="projects">
-                <img src="images.png" alt="picture of gowtham raj" height="400">
-                <div class="text">
-                    <h2>Projects<hr></h2>
-                    <ul>
-                        <li>Patient Triage System</li>
-                            <ul class="inner"><li>Developed an intelligent healthcare triage system that analyzes patient data such as vital signs, symptoms, and medical history to predict risk levels. The system assists hospitals in prioritizing patients and making faster data-driven decisions.
-Technologies: Python, Machine Learning, Data Processing, Web Interface</li></ul>
-                        <li>Model Evaluation</li>
-                </ul>
-                </div>
-                
-            </div>
-        </div>
+                </section>
 
+                <section id="contact" class="card contact">
+                    <h2 class="title">Contact</h2>
+                    <p class="text">
+                        Email:
+                        <a href="mailto:gowthamraj77ra@gmail.com">
+                            gowthamraj77ra@gmail.com
+                        </a>
+                    </p>
+
+                    <div class="contact-links">
+                        <a
+                            class="contact-item"
+                            href="https://github.com/gowthamraj77"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub Profile"
+                        >
+                            <svg class="contact-icon" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.5c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.81.06 1.24.83 1.24.83.72 1.23 1.88.88 2.33.67.07-.52.28-.88.5-1.08-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.01.08-2.11 0 0 .67-.22 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.47v2.17c0 .21.14.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+
+                        <a
+                            class="contact-item"
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn Profile"
+                        >
+                            <svg class="contact-icon" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M0 1.15C0 .52.52 0 1.15 0h13.7C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.15 1.15H1.15A1.15 1.15 0 0 1 0 14.85V1.15zM4.75 13.5V6H2.26v7.5h2.49zM3.5 4.98c.8 0 1.3-.53 1.3-1.2-.02-.7-.5-1.2-1.28-1.2-.78 0-1.3.5-1.3 1.2 0 .67.5 1.2 1.26 1.2h.02zM13.74 13.5V9.32c0-2.24-1.2-3.28-2.8-3.28-1.3 0-1.87.7-2.2 1.2V6H6.26c.03.8 0 7.5 0 7.5h2.49V9.3c0-.22.02-.45.08-.6.18-.44.58-.9 1.27-.9.9 0 1.26.68 1.26 1.68v4.02h2.38z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
     </body>
 </html>
