@@ -69,9 +69,6 @@ header a{
     
     padding:5px 10px;
 }
-header a:hover{
-
-}
 span{
     background:linear-gradient(90deg, #FF007F 0%, #00A3FF 100%) ;
     background-clip: text;
