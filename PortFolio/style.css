@@ -3,49 +3,83 @@
     padding: 0; 
     box-sizing: border-box;
     font-family: cursive, sans-serif;
+    color:white;
+    scroll-behavior: smooth;
 }
 body{
-    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyaXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60");
+    background-image: url('https://img.freepik.com/free-vector/creative-geometric-design-space_53876-89781.jpg');
     background-size: cover;
     background-position: center ;
+    background-attachment: fixed;
     height:100vh;
 }
+@keyframes lefttoright{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes righttoleft{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeout{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 header{
-    padding:30px 10%;
-    width:100%;
-    height: 150px;
+    padding:20px 40px;
+    width:90%;
+    justify-self:center;
+    border-radius: 100px ;
+    margin-top:20px;
     font-size:30px;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.518), -8px -8px 16px rgb(75, 74, 74);
+    backdrop-filter: blur(40px);
     position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 1000;
+    animation: righttoleft 1s ease-in-out;
 }
 header a{
     text-decoration: none;
-    color: black;
-    font-size: px;
+    font-size: 20 px;
     margin-left: 50px;
     border-bottom:2px solid transparent;
     transition:all 0.3s ease-in-out ;
     border-radius:5px;
+    
     padding:5px 10px;
 }
 header a:hover{
-    border-bottom:2px solid black;
-    border-radius:5px;
+
 }
 span{
-    background:linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b, #ff7e5f, #feb47b);
+    background:linear-gradient(90deg, #FF007F 0%, #00A3FF 100%) ;
     background-clip: text;
     color: transparent;
 }
 h2{
     font-size: 70px;
-    color: white;
+    margin-bottom: 60px;
 }
 p{
     font-size: 40px;
@@ -56,13 +90,28 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between ;
-    padding:0 10%;
+    padding:30% 10%;
     height: 100vh;
     width: 100%;
 }
 img{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    animation: fadeout 1s ease-in-out;
+}
+img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 70px rgb(255, 255, 255);
+}
+.home-content{
+    max-width: 800px;
+    backdrop-filter: blur(40px);
+    padding: 20px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.518), -8px -8px 16px rgb(75, 74, 74);
+    border-radius: 20px;
+    animation: lefttoright 1s ease-in-out;
 }
